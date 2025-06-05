@@ -1,8 +1,6 @@
-import logo from "../assets/At.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import logo from "../assets/robot.png";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
 
 function Navbar() {
     return (
@@ -12,10 +10,18 @@ function Navbar() {
             </div>
 
             <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-                <FaLinkedin />
-                <FaGithub />
-                <FaSquareXTwitter />
-                <FaInstagram />
+                <a href="https://linkedin.com/in/ampmakhan" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin />
+                </a>
+                <a href="https://github.com/essentrixx" target="_blank" rel="noopener noreferrer">
+                    <FaGithub />
+                </a>
+                <a href="https://twitter.com/essentrixxe" target="_blank" rel="noopener noreferrer">
+                    <FaSquareXTwitter />
+                </a>
+                <a href="https://instagram.com/essentrixxe" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram />
+                </a>
             </div>
         </nav>
     )

@@ -1,4 +1,5 @@
 import { EXPERIENCES } from "../constants/index.js";
+import { motion } from "framer-motion";
 
 function Experience() {
     return (
@@ -7,13 +8,23 @@ function Experience() {
             <div>
                 {EXPERIENCES.map((experience, index) => (
                     <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                        <div className="w-full lg:w-1/4">
+                        <motion.div 
+                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, x: -100 }}
+                            transition={{ duration: 1 }}
+                            className="w-full lg:w-1/4"
+                        >
                             <p className="mb-2 text-sm">{experience.year}</p>
-                        </div>
+                        </motion.div>
 
-                        <div className="w-full max-w-xl lg:w-3/4">
+                        <motion.div 
+                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity:0, x: 100 }}
+                            transition={{ duration: 1 }}
+                            className="w-full max-w-xl lg:w-3/4"
+                        >
                             <h6 className="mb-2 font-semibold">
-                                {experience.role} - <span className="text-sm text-purple-100">{experience.company}</span>
+                                {experience.role}
                             </h6>
                             <p className="mb-4 text-neutral-400">{experience.description}</p>
 
@@ -23,7 +34,7 @@ function Experience() {
                                 >
                                     {tech}</span>
                             ))}
-                        </div>
+                        </motion.div>
                     </div>
                 ))}
             </div>
