@@ -52,7 +52,7 @@ export const PROJECTS = [
         title: "Real Time Chat Application",
         image: project4,
         description: "Built and deployed a real time chat app with private rooms using Socket.IO, enabling real-time communication through simple room-based messaging.",
-        technologies: ["HTML", "CSS", "Node.js", "WebSocket", "Socket.IO"],
+        technologies: ["Node.js", "WebSocket", "Socket.IO"],
         liveDemo: "https://essentrixx-chat-app.onrender.com"
     },
     {
