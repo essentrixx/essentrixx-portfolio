@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants/index.js";
 import profilePic from "../assets/ampmakhan.png";
 import { motion } from "framer-motion";
 
-// for motion variants
+// motion variants
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -10,19 +10,21 @@ const container = (delay) => ({
         opacity: 1,
         transition: { duration: 0.5, delay }
     }
-})
+});
 
 function Hero() {
     return (
-        <div className="border-b border-neutral-900 pb-4 lg:px-8">
-            <div className="flex flex-wrap">
+        <div className="border-b border-neutral-900 pb-4 px-4">
+            <div className="flex flex-col-reverse lg:flex-row flex-wrap items-center">
+
+                {/* Text Content */}
                 <div className="w-full lg:w-1/2">
                     <div className="flex flex-col items-center lg:items-start">
                         <motion.h1
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+                            className="pb-10 text-4xl sm:text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl xl:text-8xl text-center lg:text-left"
                         >
                             Amp Ma Khan
                         </motion.h1>
@@ -30,7 +32,7 @@ function Hero() {
                             variants={container(0.5)}
                             initial="hidden"
                             animate="visible"
-                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+                            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl sm:text-3xl text-transparent tracking-tight text-center lg:text-left"
                         >
                             Full Stack Developer
                         </motion.span>
@@ -38,27 +40,30 @@ function Hero() {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className="my-2 max-w-xl py-6 font-light tracking-tigher"
+                            className="my-6 max-w-xl py-2 px-2 font-light tracking-tight text-center lg:text-left"
                         >
                             {HERO_CONTENT}
                         </motion.p>
                     </div>
                 </div>
 
-                <div className="w-full lg:w-1/2 lg:p-8">
+                {/* Image */}
+                <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
                     <div className="flex justify-center">
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1.2 }}
-                            src={profilePic} alt="profilepic"
-                            className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] xl:w-[450px] aspect-square object-cover rounded-2xl"
+                            src={profilePic}
+                            alt="profilepic"
+                            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[400px] aspect-square object-cover rounded-2xl"
                         />
                     </div>
                 </div>
+
             </div>
         </div>
-    )
+    );
 }
 
 export default Hero;
