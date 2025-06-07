@@ -34,11 +34,22 @@ function Projects() {
                             {project.technologies.map((technology, index) => (
                                 <span
                                     key={index}
-                                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm= font-medium text-purple-800"
                                 >
                                     {technology}
                                 </span>
                             ))}
+
+                            {project.liveDemo && (
+                                <a
+                                    href={project.liveDemo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-cyan-500"
+                                >
+                                    Live Demo
+                                </a>
+                            )}
                         </motion.div>
                     </div>
                 ))}

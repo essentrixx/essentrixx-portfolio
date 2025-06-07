@@ -2,10 +2,11 @@ import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/project2.jpg";
 import project3 from "../assets/projects/project3.jpg";
 import project4 from "../assets/projects/project4.jpg";
+import project5 from "../assets/projects/project5.jpg";
 
 export const HERO_CONTENT = `I'm a passionate full stack developer with a strong interest in building reliable and scalable web applications. I've been actively seeking to apply my skills and gain hands-on experience with both front end and back end technologies through self learning and building projects. On the front end, I use React.js to create smooth and interactive user interfaces. On the back end, I work with Node.js, along with databases like MySQL and MongoDB. I enjoy solving problems creatively and proactively, and I’m always curious about new technologies as a lifelong learner.`
 
-export const  ABOUT_TEXT = `I’m driven by a genuine passion for learning and growth. I thrive in collaborative environments where I can contribute to a team, learn from experienced developers, and tackle real world challenges. New technologies intrigue me as a lifelong learner and I adapt quickly to new tools, frameworks, and workflows. I believe in writing clean, maintainable code and continuously improving both my technical and problem solving skills.`;
+export const ABOUT_TEXT = `I'm driven by a genuine passion for learning and growth. I thrive in collaborative environments where I can contribute to a team, learn from experienced developers, and tackle real-world challenges. I enjoy solving problems creatively and proactively to deliver quality solutions. As a lifelong learner, I'm naturally curious about new technologies and adapt quickly to new tools, frameworks, and workflows. Outside of coding, I stay active by exploring new technologies and participating in developer communities and tech webinars to stay updated with industry trends.`
 
 export const EXPERIENCES = [
     {
@@ -52,11 +53,19 @@ export const PROJECTS = [
         image: project4,
         description: "Built and deployed a real time chat app with private rooms using Socket.IO, enabling real-time communication through simple room-based messaging.",
         technologies: ["HTML", "CSS", "Node.js", "WebSocket", "Socket.IO"],
+        liveDemo: "https://essentrixx-chat-app.onrender.com"
+    },
+    {
+        title: "Assembly Endgame",
+        image: project5,
+        description: "Built and deployed a fun assemble endgame project using React.js, showcasing component-based architecture, state management with hooks, and responsive design.",
+        technologies: ["HTML", "CSS", "React"],
+        liveDemo: "https://assembly-endgame-blqj.onrender.com"
     },
 ];
 
 export const CONTACT = {
-    address: "22, Pathein, Ayeyarwaddy, 10012 ",
+    address: "PA place, Lak Hok, Mueang Pathumthani, Pathumthani 12000",
     phoneNo: "+959 690715015 ",
     email: "ampmakhan77@gmail.com",
 };
