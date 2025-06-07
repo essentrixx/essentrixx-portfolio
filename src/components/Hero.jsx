@@ -48,7 +48,7 @@ function Hero() {
                 </div>
 
                 {/* Image */}
-                <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+                <div className="w-full lg:w-1/2 mb-10 lg:mt-16">
                     <div className="flex justify-center">
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
