@@ -24,7 +24,7 @@ function Hero() {
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-10 text-4xl sm:text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl xl:text-8xl text-center lg:text-left"
+                            className="pb-10 text-4xl sm:text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl xl:text-7xl text-center lg:text-left"
                         >
                             Amp Ma Khan
                         </motion.h1>
@@ -40,7 +40,7 @@ function Hero() {
                             variants={container(1)}
                             initial="hidden"
                             animate="visible"
-                            className="my-6 max-w-xl py-2 px-2 font-light tracking-tight text-center lg:text-left"
+                            className="my-6 max-w-xl py-2 font-light tracking-tight text-center lg:text-left"
                         >
                             {HERO_CONTENT}
                         </motion.p>
