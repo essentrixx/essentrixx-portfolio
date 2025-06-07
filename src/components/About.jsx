@@ -25,7 +25,7 @@ function About() {
                     className="w-full lg:w-1/2"
                 >
                     <div className="flex justify-center lg:justify-start">
-                        <p className="mt-18 max-w-xl py-2">{ABOUT_TEXT}</p>
+                        <p className="text-center lg:text-left max-w-xl py-2 mt-14">{ABOUT_TEXT}</p>
                     </div>
                 </motion.div>
             </div>
