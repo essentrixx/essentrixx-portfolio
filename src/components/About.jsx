@@ -14,7 +14,7 @@ function About() {
                     className="w-full lg:w-1/2 lg:p-8"
                 >
                     <div className="flex items-center justify-center">
-                        <img className="rounded-2xl w-[450px] h-[450px]" src={profileImg} alt="aboutimg" />
+                        <img className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-[400px] xl:w-[450px] aspect-square object-cover rounded-2xl" src={profileImg} alt="aboutimg" />
                     </div>
                 </motion.div>
 
@@ -25,7 +25,7 @@ function About() {
                     className="w-full lg:w-1/2"
                 >
                     <div className="flex justify-center lg:justify-start">
-                        <p className="my-14 max-w-xl py-6">{ABOUT_TEXT}</p>
+                        <p className="mt-18 max-w-xl py-4">{ABOUT_TEXT}</p>
                     </div>
                 </motion.div>
             </div>

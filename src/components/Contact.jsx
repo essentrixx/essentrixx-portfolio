@@ -20,7 +20,8 @@ function Contact() {
                     transition={{ duration: 1 }}
                     className="my-4"
                 >
-                    {CONTACT.phoneNo}
+                    WhatsApp: {CONTACT.phoneNo} <br />
+                    LineID: essential_711
                 </motion.p>
                 <a href={`mail:to:${CONTACT.email}`} className="border-b">{CONTACT.email}</a>
             </div>

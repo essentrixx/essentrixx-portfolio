@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants/index.js";
 import profilePic from "../assets/ampmakhan.png";
 import { motion } from "framer-motion";
 
-// for motion
+// for motion variants
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -45,14 +45,14 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-1/2 lg:p-18">
+                <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
                         <motion.img
                             initial={{ x: 100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1.2 }}
                             src={profilePic} alt="profilepic"
-                            className="w-[450px] h-[450px] rounded-2xl"
+                            className="w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] xl:w-[450px] aspect-square object-cover rounded-2xl"
                         />
                     </div>
                 </div>
