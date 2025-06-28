@@ -65,7 +65,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-    address: "PA place, Lak Hok, Mueang Pathumthani, Pathumthani 12000",
+    address: "Bang Rak Yai, Nonthaburi 11110",
     phoneNo: "+959 690715015 ",
     email: "ampmakhan77@gmail.com",
 };
